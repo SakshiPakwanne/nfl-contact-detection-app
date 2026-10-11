@@ -92,18 +92,3 @@ close-pair distance are in the sidebar and update instantly. Frames to analyse a
   both sets, so expect lower accuracy on new plays.
 - Output is review support, not an officiating decision.
 
-## Put it on GitHub
-
-The CNN weights are about 103 MB, above GitHub's 100 MB file limit, so they go through Git LFS (already set in `.gitattributes`).
-
-```bash
-git init
-git lfs install
-git add .
-git commit -m "Add Streamlit contact review app"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo>.git
-git push -u origin main
-```
-
-If you would rather not use LFS, delete `.gitattributes`, leave out `weights/cnn_model2/` and attach that file to a GitHub Release.
