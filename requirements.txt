@@ -1,0 +1,5 @@
+streamlit>=1.50
+torch>=2.2
+numpy
+pandas
+opencv-python-headless
